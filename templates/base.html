@@ -22,14 +22,16 @@
          <!-- Navigation-->
          <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container px-5">
-               <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Pranto Bhowmik</span></a>
+               <a class="navbar-brand" href="templates/base.html"><span class="fw-bolder text-primary">
+                 {{pname}}
+               </span></a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                      <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
                      <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                     <li class="nav-item"><a class="nav-link" href="static/contact.html"]>Contact</a></li>
                   </ul>
                </div>
             </div>
@@ -182,7 +184,7 @@
          <div class="col-xxl-8">
          <div class="text-center my-5">
          <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-         <p class="lead fw-light mb-4">This is Pranto and a Python Enthusiast!</p>
+         <p class="lead fw-light mb-4">This is Pranto, a Python Enthusiast!</p>
          <p class="text-muted">Meet Pranto Bhowmik, a passionate Python enthusiast and BCA student driven by the art of coding. With a keen eye for innovation, he thrives on bringing ideas to life through code. Embracing the elegance of Python, he constantly explores its possibilities and shares his coding journey on his website. Join him as he envisions a future of creativity, community-driven growth, and building innovative solutions that shape the world of technology.</p>
          <div class="d-flex justify-content-center fs-2 gap-4">
          <a class="text-gradient" href="https://www.instagram.com/pranto_bhowmik/"><i class="bi bi-instagram"></i></a>
@@ -201,13 +203,15 @@
       <footer class="bg-white py-4 mt-auto">
       <div class="container px-5">
       <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-      <div class="col-auto"><div class="small m-0">All rights reserved &copy; Pranto Bhowmik 2023</div></div>
+      <div class="col-auto"><div class="small m-0">
+        {{footer_name}}
+      </div></div>
       <div class="col-auto">
       <a class="small" href="#!">Privacy</a>
       <span class="mx-1">&middot;</span>
       <a class="small" href="#!">Terms</a>
       <span class="mx-1">&middot;</span>
-      <a class="small" href="#!">Contact</a>
+      <a class="small" href="static/contact.html">Contact</a>
       </div>
       </div>
       </div>
