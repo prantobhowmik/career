@@ -16,6 +16,18 @@ def contact():
                          pname='Pranto Bhowmik',
                          footer_name='All rights reserved \u00A9 Pranto Bhowmik 2023'
                          )
+@app.route("/app/projects.html")
+def projects():
+  return render_template('projects.html',
+                         pname='Pranto Bhowmik',
+                         footer_name='All rights reserved \u00A9 Pranto Bhowmik 2023'
+                         )
+@app.route("/app/resume.html")
+def resume():
+  return render_template('resume.html',
+                         pname='Pranto Bhowmik',
+                         footer_name='All rights reserved \u00A9 Pranto Bhowmik 2023'
+                         )
   
 if __name__=='__main__':
   app.run(host='0.0.0.0', debug=True)
