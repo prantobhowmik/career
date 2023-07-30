@@ -28,6 +28,12 @@ def resume():
                          pname='Pranto Bhowmik',
                          footer_name='All rights reserved \u00A9 Pranto Bhowmik 2023'
                          )
+@app.route("/app/privacy.html")
+def privacy():
+  return render_template('privacy.html',
+                         pname='Pranto Bhowmik',
+                         footer_name='All rights reserved \u00A9 Pranto Bhowmik 2023'
+                         )
   
 if __name__=='__main__':
   app.run(host='0.0.0.0', debug=True)
